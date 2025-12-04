@@ -8,24 +8,37 @@
         body {
             margin: 0;
             padding: 0;
-            overflow: hidden;
-        }
-        .bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 100vh;
-            background-image: url('https://www.salesforce.com/content/dam/web/en_us/www/images/resources/services/agentforce-activator-professional-services.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+        }
+
+        .image-wrapper {
+            padding: 20px;
+            border: 4px solid #ccc;
+            border-radius: 12px;
+            background: white;
+            max-width: 90vw;
+            max-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-wrapper img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
         }
     </style>
 </head>
 <body>
 
-    <div class="bg"></div>
+    <div class="image-wrapper">
+        <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/resources/services/agentforce-activator-professional-services.png" alt="Centered Image">
+    </div>
 
     <script type='text/javascript'>
         function initEmbeddedMessaging() {
